@@ -23,15 +23,15 @@ body{
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
-.cabecalho{
+.header{
           /*Up, Right, Down, Left  */
     padding: 2% 0 0 15%;
 }
-.cabecalho__menu{
+.header__menu{
     display: flex;
     gap: 5rem;
 }
-.cabecalho__menu__link{
+.header__menu__link{
     Color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
     font-size:1.5rem;
@@ -120,10 +120,10 @@ body{
 }
  
 @media (max-width: 1200px){
-    .cabecalho{
+    .header{
         padding: 10%;
     }
-    .cabecalho__menu{
+    .header__menu{
         justify-content: center;
     }
     .container{
