@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --cor-primaria: #000000;
+    --cor-primaria: #13131f;
     --cor-secundaria: #F2F2F2;
     --cor-terciaria: #FA50C4;
-    --cor-quaternaria: #606060;
-    --cor-apoio: #8C0669;
+    --cor-quaternaria: #494949;
+    --cor-apoio: #86226c;
     --cor-bg-hover: #272727;
     --cor-bd-hover: #22D4FD;
 
@@ -17,11 +17,13 @@
 * {
     margin: 0;
     padding: 0;
+    align-items: center;
+    text-align: center;
 }
 
 body {
     box-sizing: border-box;
-    /* height: 100vh; */
+    
     width: 100%;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
@@ -41,20 +43,32 @@ header {
 }.header__container{
     margin: 0 2%;
     padding: 2% 0;
-
-    
+    font-size: 2rem;
     
     align-items: center;
-    
     & .header__menu {
         display: flex;
         justify-content: space-between;
         & a{
             text-decoration: none;
         }
-        & h2{
+        & .ri-menu-line{
+            font-size: 1.5rem;
+            padding: 0.35rem;
+            color: var(--cor-apoio);
+        }
+        & .ri-menu-line:hover{
             
+            color:var(--cor-primaria);
+            background-color: var(--cor-apoio);
+            border-radius: 3rem;
+        }
+        & h2{
+            font-size: 1.8rem;
             color: var(--cor-secundaria);
+        }
+        & h2:hover{
+            color:var(--cor-quaternaria);
         }
     }
 }
@@ -63,16 +77,18 @@ header {
 .intro {
     display: flex;
     justify-content: space-between;
-    padding: 10% 3%;
+    padding: 8% 10%;
     align-items: center;
 
-
+    & .foto{
+        border-radius: 20rem;
+    }
     & .title {
         font-size: 4.2rem;
         line-height: 4.2rem;
 
         & span {
-            color: #8C0669;
+            color: var(--cor-apoio);
             font-weight: 500;
             font-family: var(--fonte-primaria);
         }
@@ -82,30 +98,59 @@ header {
             color: var(--cor-quaternaria);
         }
     }
-
-
 }
 
 .container {
-    /*vertical*/
-    /*horizontal*/
-    /* margin:  10%  15%;  */
     padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 82px;
+    text-align: center;
+
+    & .container__about__title{
+        font-size: 1.8rem ;
+    }
+    & .container__about__text{
+        font-size: 1.5rem;
+        color: var(--cor-quaternaria);
+    }
+
 }
 
 .rodape {
-    padding: 1.5rem;
-    background-color: var(--cor-apoio);
+    width: 90%;
+    padding: 5rem;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
     color: var(--cor-secundaria);
-
     text-align: center;
-    font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
-    font-weight: 400;
+    
+    & .icons{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        gap: 5.5rem ;
+        font-size: 3rem;
+
+
+
+
+        & .icon{
+            
+            padding: 0;
+
+            & p{
+                font-size: 1.4rem;
+            }
+        }
+
+    }
+
+
+
 }
 
 @media (max-width: 1200px) {
