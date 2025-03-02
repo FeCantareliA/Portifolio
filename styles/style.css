@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --cor-primaria: #13131f;
+    --cor-primaria: #13131f ;
     --cor-secundaria: #F2F2F2;
     --cor-terciaria: #FA50C4;
     --cor-quaternaria: #494949;
-    --cor-apoio: #86226c;
+    --cor-apoio: #22D4FD;
     --cor-bg-hover: #272727;
-    --cor-bd-hover: #22D4FD;
+    --cor-bd-hover: #86226c ;
 
     --fonte-primaria: "Montserrat", sans-serif;
     --fonte-secundaria: "Krona-one", sans-serif;
@@ -118,8 +118,8 @@ header {
 }
 
 .rodape {
-    width: 90%;
-    padding: 5rem;
+    width: 92%;
+    padding: 5% 5%;
     display: flex;
     flex-direction:column ;
     justify-content: center;
@@ -130,10 +130,8 @@ header {
     
     & .icons{
         display: flex;
-        width: 90%;
         justify-content: center;
-        gap: 5.5rem ;
-        font-size: 3rem;
+        gap: 5rem ;
 
 
 
@@ -142,8 +140,23 @@ header {
             
             padding: 0;
 
-            & p{
+            & .icon-principal{
+                color: var(--cor-secundaria);
+                justify-content: center;
+                display: flex;
                 font-size: 1.4rem;
+                text-decoration: none;
+                & a:visited{
+                    color: var(--cor-apoio);
+                }
+                & i{
+                    font-size: 2.8rem;
+                }
+            }
+            & .icon-subtitle{
+                color: var(--cor-quaternaria);
+                text-decoration: none;
+                font-size: 1.2rem;
             }
         }
 
