@@ -168,9 +168,7 @@ header {
                 flex-direction: column;
                 
                 border: 0.125rem solid var(--cor-apoio);
-
-                & .icon-principal{
-                    color: var(--cor-apoio);
+                color: var(--cor-apoio);
                 }
                 & .icon-subtitle{
                     color: var(--cor-quaternaria);
