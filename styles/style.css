@@ -158,9 +158,12 @@ header {
                 text-decoration: none;
                 font-size: 1.2rem;
             }
-            & .icon-principal:hover{
+            & .icon:hover{
                 color: var(--cor-apoio);
-                border: 0.25rem solid var(--cor-apoio);
+                border: 0.125rem solid var(--cor-apoio);
+
+                & .icon-subtitle{
+                    color: var(--cor-quaternaria);
         }
 
     }
