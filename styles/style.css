@@ -146,8 +146,6 @@ header {
             
             & .icon-principal{
                 color: var(--cor-secundaria);
-                justify-content: center;
-                display: flex;
                 font-size: 1.4rem;
                 text-decoration: none;
                 
