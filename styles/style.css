@@ -138,14 +138,19 @@ header {
 
         & .icon{
             
-            padding: 0.125rem;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column
+
+            
+            & .icon-principal{
                 color: var(--cor-secundaria);
                 justify-content: center;
                 display: flex;
                 font-size: 1.4rem;
                 text-decoration: none;
-            & .icon-principal{
-
+                
                 & a:visited{
                     color: var(--cor-apoio);
                 }
@@ -159,7 +164,7 @@ header {
                 font-size: 1.2rem;
             }
             & .icon:hover{
-                padding: 0.25rem;
+                
                 color: var(--cor-apoio);
                 border: 0.125rem solid var(--cor-apoio);
 
