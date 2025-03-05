@@ -164,10 +164,16 @@ header {
                 font-size: 1.2rem;
             }
             & .icon:hover{
+                padding: 0.5rem;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
                 
-                color: var(--cor-apoio);
                 border: 0.125rem solid var(--cor-apoio);
 
+                & .icon-principal{
+                    color: var(--cor-apoio);
+                }
                 & .icon-subtitle{
                     color: var(--cor-quaternaria);
         }
