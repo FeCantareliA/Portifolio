@@ -139,13 +139,13 @@ header {
         & .icon{
             
             padding: 0.125rem;
-
-            & .icon-principal{
                 color: var(--cor-secundaria);
                 justify-content: center;
                 display: flex;
                 font-size: 1.4rem;
                 text-decoration: none;
+            & .icon-principal{
+
                 & a:visited{
                     color: var(--cor-apoio);
                 }
