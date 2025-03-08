@@ -101,14 +101,16 @@ header {
 }
 
 .container {
-    padding: 5% 15%;
+    width: 60%;
+    padding: 5% 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
 
     & .container__about__title{
-        font-size: 1.8rem ;
+        font-size: 2rem ;
+        
     }
     & .container__about__text{
         font-size: 1.5rem;
@@ -118,8 +120,8 @@ header {
 }
 
 .rodape {
-    width: 92%;
-    padding: 5% 5%;
+    width: 100%;
+    padding: 5% 0;
     display: flex;
     flex-direction:column ;
     justify-content: center;
@@ -129,8 +131,12 @@ header {
     font-size: 1.5rem;
     
     & .icons{
+        width: 100%;
+        padding: 1% 0;
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: row;
         gap: 5rem ;
 
 
@@ -181,25 +187,11 @@ header {
 }
 
 @media (max-width: 1200px) {
-    .header {
-        padding: 10%;
+    
+
+
+
+
+
     }
-
-    .header__menu {
-        justify-content: center;
-    }
-
-    .container {
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-
-    .container__content {
-        width: auto;
-    }
-
-
-
-
-
 }
