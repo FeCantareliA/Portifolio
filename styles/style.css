@@ -107,8 +107,10 @@ header {
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    flex-direction: column;
+    gap: 10rem 0;
 
-    & .container__about__title{
+    & .container__title{
         font-size: 2rem ;
         
     }
