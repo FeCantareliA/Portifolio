@@ -119,6 +119,7 @@ header {
         color: var(--cor-quaternaria);
     }
     & .container__conhecimento__info{
+        display: flex;
         font-size: 2.2rem;
         color: var(--cor-secundaria);
         gap:2rem
