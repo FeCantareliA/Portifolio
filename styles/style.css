@@ -126,8 +126,6 @@ header {
     }
     & .container__conhecimento__info i:hover{
         color: var(--cor-apoio);
-        border:dotted var(--cor-apoio) 0.2rem;
-        border-radius: 5rem;
     }
 
 }
