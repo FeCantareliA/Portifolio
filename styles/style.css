@@ -4,11 +4,9 @@
 :root {
     --cor-primaria: #13131f ;
     --cor-secundaria: #F2F2F2;
-    --cor-terciaria: #FA50C4;
-    --cor-quaternaria: #494949;
+    --cor-quaternaria: #b8b5b5;
     --cor-apoio: #22D4FD;
-    --cor-bg-hover: #272727;
-    --cor-bd-hover: #86226c ;
+    --cor-apoio-title: #80E8FF;
 
     --fonte-primaria: "Montserrat", sans-serif;
     --fonte-secundaria: "Krona-one", sans-serif;
@@ -52,12 +50,12 @@ header {
         & a{
             text-decoration: none;
         }
-        & .ri-menu-line{
+        & i{
             font-size: 1.5rem;
             padding: 0.35rem;
             color: var(--cor-apoio);
         }
-        & .ri-menu-line:hover{
+        & i:hover{
             
             color:var(--cor-primaria);
             background-color: var(--cor-apoio);
@@ -68,7 +66,7 @@ header {
             color: var(--cor-secundaria);
         }
         & h2:hover{
-            color:var(--cor-quaternaria);
+            color:var(--cor-apoio-title);
         }
     }
 }
@@ -79,6 +77,7 @@ header {
     justify-content: space-between;
     padding: 8% 10%;
     align-items: center;
+    cursor: context-menu;
 
     & .foto{
         border-radius: 20rem;
@@ -109,23 +108,55 @@ header {
     text-align: center;
     flex-direction: column;
     gap: 10rem 0;
+    cursor: context-menu;
 
     & .container__title{
         font-size: 2rem ;
-        
+        color: var(--cor-apoio-title) ;
     }
+    
     & .container__about__text{
         font-size: 1.5rem;
         color: var(--cor-quaternaria);
     }
+
+& .container__formacao{
+    width: 60%;
+    padding: 0 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+    & .container__formacao__lista{
+        width: 70%;
+        padding: 0 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+
+        color: var(--cor-secundaria);
+        font-size: 1.5rem;   
+    }
+    
+    & .container__formacao__lista__conteudo{
+        color:var(--cor-quaternaria)
+    }
+
+
+
+
+
     & .container__conhecimento__info{
         display: flex;
         font-size: 2.2rem;
         color: var(--cor-secundaria);
-        gap:2rem
+        gap:2rem;
+        
     }
     & .container__conhecimento__info i:hover{
         color: var(--cor-apoio);
+        
     }
 
 }
@@ -140,6 +171,10 @@ header {
     color: var(--cor-secundaria);
     text-align: center;
     font-size: 1.5rem;
+
+    & .rodape__titulo{
+        color: var(--cor-apoio-title);
+    }
     
     & .icons{
         width: 100%;
@@ -177,6 +212,7 @@ header {
                 color: var(--cor-quaternaria);
                 text-decoration: none;
                 font-size: 1.2rem;
+                
             }
             & .icon-principal:hover{
                 padding: 0.5rem;
