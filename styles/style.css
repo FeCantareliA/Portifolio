@@ -52,12 +52,12 @@ header {
         & a{
             text-decoration: none;
         }
-        & .ri-menu-line{
+        & i{
             font-size: 1.5rem;
             padding: 0.35rem;
             color: var(--cor-apoio);
         }
-        & .ri-menu-line:hover{
+        & i:hover{
             
             color:var(--cor-primaria);
             background-color: var(--cor-apoio);
