@@ -44,6 +44,12 @@ header {
     font-size: 2rem;
     
     align-items: center;
+
+    & input{
+        display: none;
+        position:absolute;
+    }
+
     & .header__menu {
         display: flex;
         justify-content: space-between;
@@ -69,6 +75,15 @@ header {
             color:var(--cor-apoio-title);
         }
     }
+    & .header__menu__lista{
+        display: none;
+        position: absolute;
+        top:100%;
+    }
+    & .header__menu__botao:checked~.header__menu__lista{
+        display: block;
+    }
+    
 }
 
 

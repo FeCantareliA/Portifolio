@@ -14,8 +14,16 @@
     <header class>
         <div class="header__container">
             <nav class="header__menu">
-                <i class="fa-solid fa-bars"></i>
-                <a href="#Sobre-mim">
+                <input type="checkbox" id="Like" class="header__menu__botao">
+                <label for="Like"><i class="fa-solid fa-bars" ></i></label>
+                <ul class="header__menu__lista">
+                    <li><a href="#Sobre-mim">Sobre</a></li>
+                    <li><a href="#Formacao">Formação</a></li>
+                    <li><a href="#Conhecimento">Conhecimento</a></li>
+                    <li><a href="#Rodape">Contatos</a></li>
+                </ul>
+
+                <a href="index.html">
                     <h2>Portifólio</h2>
                 </a>
                 <!-- tirar paragrafo depois -->
@@ -42,7 +50,7 @@
                 técnico de informática.</p>
         </section>
 
-        <section class="container__formacao">
+        <section class="container__formacao" id="Formacao">
             <h2 class="container__title">Formação</h2>
             
             <ul class="container__formacao__lista">
@@ -60,7 +68,7 @@
             </ul>
         </section>
 
-        <section class="container__conhecimento">
+        <section class="container__conhecimento" id="Conhecimento">
             <h2 class="container__title">Conhecimentos</h2>
             <p class="container__conhecimento__info">
                 <i class="fab fa-html5"></i>
@@ -73,7 +81,7 @@
         <section class="container__projetos"></section>
     </main>
 
-    <footer class="rodape">
+    <footer class="rodape" id="Rodape">
         <h2 class="rodape__titulo">Contatos</h2>
         <div class="icons">
             <div class="icon">
