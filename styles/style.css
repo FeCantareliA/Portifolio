@@ -86,15 +86,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
-
     & .container__formacao__lista{
         width: 70%;
         padding: 0 15%;
         display: flex;
         flex-direction: column;
         align-items: baseline;
-
+    
         color: var(--cor-secundaria);
         font-size: 1.5rem;   
     }
@@ -102,6 +100,8 @@ body {
     & .container__formacao__lista__conteudo{
         color:var(--cor-quaternaria)
     }
+}
+
 
 
 
@@ -117,6 +117,33 @@ body {
     & .container__conhecimento__info i:hover{
         color: var(--cor-apoio);
         
+    }
+
+    
+
+
+    & .projects{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 0.6rem;
+            
+        & .projetos{
+            
+            width: 100%;
+            border: 0.125rem solid var(--cor-apoio);
+            & img{
+                width: 100%;
+            }
+            & .projetos__conhecimento{
+                display: none;
+            }
+        }
+        & .projetos:hover .projetos__conhecimento{
+            display: flex; 
+            justify-content: center;
+
+        }
     }
 
 }
