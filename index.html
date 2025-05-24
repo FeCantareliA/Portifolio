@@ -14,9 +14,17 @@
     <header class>
         <div class="header__container">
             <nav class="header__menu">
-                <!-- tirar paragrafo depois -->
-                <p>asdasdas</p>
-                <a href="#Sobre-mim">
+                <input type="checkbox" id="Like" class="header__menu__botao">
+                <label for="Like"><i class="fa-solid fa-bars" ></i></label>
+                <ul class="header__menu__lista">
+                    <li><a href="#Sobre-mim">Sobre</a></li>
+                    <li><a href="#Formacao">Formação</a></li>
+                    <li><a href="#Conhecimento">Conhecimento</a></li>
+                    <li><a href="#Projetos">Projetos</a></li>
+                    <li><a href="#Rodape">Contatos</a></li>
+                </ul>
+
+                <a href="index.html">
                     <h2>Portifólio</h2>
                 </a>
                 <!-- tirar paragrafo depois -->
@@ -24,6 +32,7 @@
             </nav>
         </div>
     </header>
+
     <section class="intro">
         <div class="title">
             <h3>Olá! Sou </h3>
@@ -31,19 +40,108 @@
             <p>Estudante de Ciências da Computação</p>
         </div>
         <!-- Trocar a imagem para uma foto minha -->
-        <img src="./assets/Imagem.png">
+        <img class="foto" src="./assets/IMG-20230104-WA0042 - Copia.jpg" alt="Foto">
     </section>
-    <main class="container">
-        <section class="container__about" id="Sobre-mim">
-            <h2 class="container__about__title">Sobre mim</h2>
-            <a class="container__about__text">Estudante de Ciências da Computação, com experiência em JAVA, C#, HTML,
-                CSS e PostgreSQL. Interessado pela aprendizagem e desafios. Também possuo experiência como suporte
-                técnico de computadores</a>
+
+    <main class="container" id="Sobre-mim">
+        <section class="container__about" >
+            <h2 class="container__title">Sobre mim</h2>
+            <p class="container__about__text">Estudante de Ciências da Computação, com conhecimento e estudo em
+                full-stack. Interessado pela aprendizagem e desafios. Também possuo experiência como
+                técnico de informática.</p>
         </section>
 
+        <section class="container__formacao" id="Formacao">
+            <h2 class="container__title">Formação</h2>
+            
+            <ul class="container__formacao__lista">
+                <h3 class="container__formacao__lista__titulo">Graduação</h3>
+                <li class="container__formacao__lista__conteudo">Bacharelado em Ciências da Computação (5º Semestre)</li>
+            </ul>
+            
+            <ul class="container__formacao__lista">
+                <h3 class="container__formacao__lista__titulo">Cursos</h3>
+                <li class="container__formacao__lista__conteudo">Lógica de programação</li>
+                <li class="container__formacao__lista__conteudo">Básico de Python</li>
+                <li class="container__formacao__lista__conteudo">Programação Orientada à Objetos com C#</li> 
+                <li class="container__formacao__lista__conteudo">JAVA básico</li>
+                <li class="container__formacao__lista__conteudo">JAVA para Programação Orientada à Objetos</li>
+            </ul>
+        </section>
+
+        <section class="container__conhecimento" id="Conhecimento">
+            <h2 class="container__title">Conhecimentos</h2>
+            <p class="container__conhecimento__info">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-java"></i>
+                <i class="fab fa-css3"></i>
+                <i class="c-sharp">C#</i>
+                <i class="fab fa-python"></i>
+            </p>
+        </section>
+        <section class="container__projetos" id="Projetos">
+            <h2 class="container__title">Projetos</h2>
+            <div class="projects">
+                <div class="projetos">
+                    <a href="https://github.com/FeCantareliA/Portifolio"><img src="./assets/Port.png" alt="projeto_portifolio"></a>
+                    <div class="projetos__conhecimento">
+                        <i class="fab fa-html5">a</i>
+                        <i class="fab fa-css3">b</i>
+                    </div>
+                </div>
+                <div class="projetos">
+                    <a href="https://github.com/FeCantareliA/Portifolio"><img src="./assets/Port.png" alt="projeto_portifolio"></a>
+                    <div class="projetos__conhecimento">
+                        <i class="fab fa-html5">a</i>
+                        <i class="fab fa-css3">b</i>
+                    </div>
+                </div>
+                <div class="projetos">
+                    <a href="https://github.com/FeCantareliA/Portifolio"><img src="./assets/Port.png" alt="projeto_portifolio"></a>
+                    <div class="projetos__conhecimento">
+                        <i class="fab fa-html5">a</i>
+                        <i class="fab fa-css3">b</i>
+                    </div>
+                </div>
+                <div class="projetos">
+                    <a href="https://github.com/FeCantareliA/Portifolio"><img src="./assets/Port.png" alt="projeto_portifolio"></a>
+                    <div class="projetos__conhecimento">
+                        <i class="fab fa-html5">a</i>
+                        <i class="fab fa-css3">b</i>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
     </main>
-    <footer class="rodape">
-        <p>Desenvolvido em estudo com a Alura</p>
+
+    <footer class="rodape" id="Rodape">
+        <h2 class="rodape__titulo">Contatos</h2>
+        <div class="icons">
+            <div class="icon">
+                <a href="https://github.com/FeCantareliA" class="icon-principal">
+                    <i class='fab fa-github-square'></i>
+                    <p>GitHub</p>
+                    <p class="icon-subtitle"> @FeCantareliA </p>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="mailto:fecantareli@outlook.com" class="icon-principal">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email</p>
+                    <p class="icon-subtitle"> fecantareli@outlook.com </p>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/felipe-cantareli-135b0b2b7/" class="icon-principal">
+                    <i class="	fab fa-linkedin"></i>
+                    <p> Linkedin</p>
+                    <p class="icon-subtitle">
+                        @FelipeCantareli
+                    </p>
+                </a>
+            </div>
+        </div>
     </footer>
 
 

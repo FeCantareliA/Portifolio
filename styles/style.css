@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('../styles/header.css');
+@import url('../styles/rodape.css');
 
 :root {
-    --cor-primaria: #000000;
+    --cor-primaria: #13131f ;
     --cor-secundaria: #F2F2F2;
-    --cor-terciaria: #FA50C4;
-    --cor-quaternaria: #606060;
-    --cor-apoio: #8C0669;
-    --cor-bg-hover: #272727;
-    --cor-bd-hover: #22D4FD;
+    --cor-quaternaria: #b8b5b5;
+    --cor-apoio: #22D4FD;
+    --cor-apoio-title: #80E8FF;
 
     --fonte-primaria: "Montserrat", sans-serif;
     --fonte-secundaria: "Krona-one", sans-serif;
@@ -17,62 +17,37 @@
 * {
     margin: 0;
     padding: 0;
+    align-items: center;
+    text-align: center;
 }
 
 body {
     box-sizing: border-box;
-    /* height: 100vh; */
+    
     width: 100%;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
 
-header {
-    /*Up, Right, Down, Left  */
-    
-    position: fixed;
-    display: block;
-    width:100%;
-    
 
-    background-color: var(--cor-primaria);
-    border-bottom: 0.125rem solid var(--cor-apoio);
-
-}.header__container{
-    margin: 0 2%;
-    padding: 2% 0;
-
-    
-    
-    align-items: center;
-    
-    & .header__menu {
-        display: flex;
-        justify-content: space-between;
-        & a{
-            text-decoration: none;
-        }
-        & h2{
-            
-            color: var(--cor-secundaria);
-        }
-    }
-}
 
 
 .intro {
     display: flex;
     justify-content: space-between;
-    padding: 10% 3%;
+    padding: 8% 10%;
     align-items: center;
+    cursor: context-menu;
 
-
+    & .foto{
+        border-radius: 20rem;
+    }
     & .title {
         font-size: 4.2rem;
         line-height: 4.2rem;
 
         & span {
-            color: #8C0669;
+            color: var(--cor-apoio);
             font-weight: 500;
             font-family: var(--fonte-primaria);
         }
@@ -82,52 +57,105 @@ header {
             color: var(--cor-quaternaria);
         }
     }
-
-
 }
 
 .container {
-    /*vertical*/
-    /*horizontal*/
-    /* margin:  10%  15%;  */
-    padding: 5% 15%;
+    width: 60%;
+    padding: 5% 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 82px;
-}
-
-.rodape {
-    padding: 1.5rem;
-    background-color: var(--cor-apoio);
-    color: var(--cor-secundaria);
-
     text-align: center;
-    font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
-    font-weight: 400;
+    flex-direction: column;
+    gap: 10rem 0;
+    cursor: context-menu;
+
+    & .container__title{
+        font-size: 2rem ;
+        color: var(--cor-apoio-title) ;
+    }
+    
+    & .container__about__text{
+        font-size: 1.5rem;
+        color: var(--cor-quaternaria);
+    }
+
+& .container__formacao{
+    width: 60%;
+    padding: 0 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    & .container__formacao__lista{
+        width: 70%;
+        padding: 0 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    
+        color: var(--cor-secundaria);
+        font-size: 1.5rem;   
+    }
+    
+    & .container__formacao__lista__conteudo{
+        color:var(--cor-quaternaria)
+    }
 }
+
+
+
+
+
+
+    & .container__conhecimento__info{
+        display: flex;
+        font-size: 2.2rem;
+        color: var(--cor-secundaria);
+        gap:2rem;
+        
+    }
+    & .container__conhecimento__info i:hover{
+        color: var(--cor-apoio);
+        
+    }
+
+    
+
+
+    & .projects{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 0.6rem;
+            
+        & .projetos{
+            
+            width: 100%;
+            border: 0.125rem solid var(--cor-apoio);
+            & img{
+                width: 100%;
+            }
+            & .projetos__conhecimento{
+                display: none;
+            }
+        }
+        & .projetos:hover .projetos__conhecimento{
+            display: flex; 
+            justify-content: center;
+
+        }
+    }
+
+}
+
+
 
 @media (max-width: 1200px) {
-    .header {
-        padding: 10%;
+    
+
+
+
+
+
     }
 
-    .header__menu {
-        justify-content: center;
-    }
-
-    .container {
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-
-    .container__content {
-        width: auto;
-    }
-
-
-
-
-
-}
