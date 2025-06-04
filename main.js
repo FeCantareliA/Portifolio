@@ -1,30 +1,24 @@
-const buttonMenu = document.getElementById("btmenu");
-const listMenu = document.getElementById("menu_lista")
+window.addEventListener('DOMContentLoaded', () => {
+  const buttonMenu = document.getElementById("btmenu");
+  const listMenu = document.getElementById("menu_lista");
 
+  const barsMenu = "<i class='fa-solid fa-bars'></i>";
+  const closeMenu = "<i class='fa-solid fa-xmark'></i>";
 
+  const inteMenu = () => {
+    if (listMenu.style.display === "none" || listMenu.style.display === "") {
+      listMenu.style.display = "block";
+      buttonMenu.innerHTML = closeMenu;
+    } else {
+      listMenu.style.display = "none";
+      buttonMenu.innerHTML = barsMenu;
+    }
+  };
 
-const barsMenu = "<i class='fa-solid fa-bars' ></i>";
-const closeMenu = "<i class='fa-solid fa-xmark'></i>";
+  function inicio() {
+    buttonMenu.innerHTML = barsMenu;
+  }
 
-
-
-
-
-
-const inteMenu = () =>{
-if(listMenu.style.display === "none" || listMenu.style.display === ""){
-    listMenu.style.display="block";
-    buttonMenu.innerHTML=closeMenu;
-}else
-    listMenu.style.display = "none";
-    buttonMenu.innerHTML = barsMenu; 
-}
-
-function inicio (){
-    buttonMenu.innerHTML = barsMenu; 
-}
-
-
-inicio()
-buttonMenu.onclick = inteMenu;
- 
+  inicio();
+  buttonMenu.onclick = inteMenu;
+});
