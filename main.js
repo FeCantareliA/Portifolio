@@ -1,7 +1,7 @@
 const buttonMenu = document.getElementById("btmenu");
 const listMenu = document.getElementById("menu_lista")
 
-buttonMenu.innerHTML = barsMenu; 
+
 
 const barsMenu = "<i class='fa-solid fa-bars' ></i>";
 const closeMenu = "<i class='fa-solid fa-xmark'></i>";
@@ -20,6 +20,11 @@ if(listMenu.style.display === "none" || listMenu.style.display === ""){
     buttonMenu.innerHTML = barsMenu; 
 }
 
+function inicio (){
+    buttonMenu.innerHTML = barsMenu; 
+}
 
+
+inicio()
 buttonMenu.onclick = inteMenu;
  
