@@ -67,7 +67,7 @@ header {
         border: 0.125rem solid var(--cor-apoio) ;
         list-style-type: none;
 
-    }& #menu_lista li{
+    }& #menu_lista li a{
         color: var(--cor-secundaria);
     }
     
