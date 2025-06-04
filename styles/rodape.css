@@ -1,3 +1,14 @@
+:root {
+    --cor-primaria: #13131f ;
+    --cor-secundaria: #F2F2F2;
+    --cor-quaternaria: #b8b5b5;
+    --cor-apoio: #22D4FD;
+    --cor-apoio-title: #80E8FF;
+
+    --fonte-primaria: "Montserrat", sans-serif;
+    --fonte-secundaria: "Krona-one", sans-serif;
+}
+
 .rodape {
     width: 100%;
     padding: 5% 0;

@@ -7,8 +7,6 @@
 
     --fonte-primaria: "Montserrat", sans-serif;
     --fonte-secundaria: "Krona-one", sans-serif;
-
-    --cor-bg-menu: #2149FC;
 }
 
 header {
@@ -59,7 +57,7 @@ header {
             color:var(--cor-apoio-title);
         }
     }
-    & .header__menu__lista{
+    & #menu_lista{
         display: none;
         position: absolute;
         top:100%;
@@ -69,16 +67,16 @@ header {
         border: 0.125rem solid var(--cor-apoio) ;
         list-style-type: none;
 
-    }&.header__menu__lista a:hover{
+    }& #menu_lista li{
+        color: var(--cor-secundaria);
+    }
+    
+    &#menu_lista a:hover{
         color:var(--cor-apoio);
     }
     
-    & .header__menu__lista a:visited{
+    & #menu_lista a:visited{
         color:var(--cor-secundaria);
     }
 
-    & .header__menu__botao:checked~.header__menu__lista{
-        display: block;
-    }
-    
 }
