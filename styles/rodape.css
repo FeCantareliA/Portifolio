@@ -10,15 +10,15 @@
 }
 
 .rodape {
-    width: 100%;
-    padding: 5% 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--cor-secundaria);
-    text-align: center;
-    font-size: 1.5rem;
+    position: fixed;
+    height: 10%;
+    width: 100vw;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--cor-primaria);
+    border-top:0.1rem solid var(--cor-apoio);
 }
 
 .rodape__titulo {
@@ -27,12 +27,13 @@
 
 .icons {
     width: 100%;
-    padding: 1% 0;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 5rem;
+    
+    
 }
 
 
@@ -51,7 +52,7 @@
     font-size: 1.4rem;
     text-decoration: none;
     border: 0.125rem solid transparent;
-    padding: 0.5rem;
+    
 }
 
 a:visited {
