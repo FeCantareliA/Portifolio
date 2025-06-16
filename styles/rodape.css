@@ -1,5 +1,5 @@
 :root {
-    --cor-primaria: #13131f ;
+    --cor-primaria: #13131f;
     --cor-secundaria: #F2F2F2;
     --cor-quaternaria: #b8b5b5;
     --cor-apoio: #22D4FD;
@@ -13,69 +13,72 @@
     width: 100%;
     padding: 5% 0;
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--cor-secundaria);
     text-align: center;
     font-size: 1.5rem;
+}
 
-    & .rodape__titulo{
-        color: var(--cor-apoio-title);
-    }
+.rodape__titulo {
+    color: var(--cor-apoio-title);
+}
+
+.icons {
+    width: 100%;
+    padding: 1% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+
+
+.icon {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.icon-principal {
+    color: var(--cor-secundaria);
+    font-size: 1.4rem;
+    text-decoration: none;
+    border: 0.125rem solid transparent;
+    padding: 0.5rem;
+}
+
+a:visited {
+    color: var(--cor-apoio);
+}
+
+i {
+    font-size: 2.8rem;
+}
+
+.icon-subtitle {
+    color: var(--cor-quaternaria);
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+
+.icon-principal:hover {
     
-    & .icons{
-        width: 100%;
-        padding: 1% 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        gap: 5rem ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
+    border: 0.125rem solid var(--cor-apoio);
+    color: var(--cor-apoio);
+}
 
-
-
-        & .icon{
-            
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-
-            
-            & .icon-principal{
-                color: var(--cor-secundaria);
-                font-size: 1.4rem;
-                text-decoration: none;
-                
-                & a:visited{
-                    color: var(--cor-apoio);
-                }
-                & i{
-                    font-size: 2.8rem;
-                }
-            }
-            & .icon-subtitle{
-                color: var(--cor-quaternaria);
-                text-decoration: none;
-                font-size: 1.2rem;
-                
-            }
-            & .icon-principal:hover{
-                padding: 0.5rem;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                
-                border: 0.125rem solid var(--cor-apoio);
-                color: var(--cor-apoio);
-                }
-                & .icon-subtitle{
-                    color: var(--cor-quaternaria);
-                }
-
-        }
-
-    }
+.icon-subtitle {
+    color: var(--cor-quaternaria);
 }

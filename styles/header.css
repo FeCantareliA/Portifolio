@@ -1,5 +1,5 @@
 :root {
-    --cor-primaria: #13131f ;
+    --cor-primaria: #13131f;
     --cor-secundaria: #F2F2F2;
     --cor-quaternaria: #b8b5b5;
     --cor-apoio: #22D4FD;
@@ -11,72 +11,78 @@
 
 header {
     /*Up, Right, Down, Left  */
-    
+    z-index: 1000;
     position: fixed;
     display: block;
-    width:100%;
-    
+    width: 100%;
+
 
     background-color: var(--cor-primaria);
     border-bottom: 0.125rem solid var(--cor-apoio);
 
-}.header__container{
+}
+
+.header__container {
     margin: 0 2%;
     padding: 2% 0;
     font-size: 2rem;
-    
+
     align-items: center;
+}
 
-    & input{
-        display: none;
-        position:absolute;
-    }
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+}
 
-    & .header__menu {
-        display: flex;
-        justify-content: space-between;
-        & a{
-            text-decoration: none;
-        }
-        & i{
-            font-size: 1.5rem;
-            padding: 0.35rem;
-            color: var(--cor-apoio);
-        }
-        & i:hover{
-            
-            color:var(--cor-primaria);
-            background-color: var(--cor-apoio);
-            border-radius: 3rem;
-        }
-        & h2{
-            font-size: 1.8rem;
-            color: var(--cor-secundaria);
-        }
-        & h2:hover{
-            color:var(--cor-apoio-title);
-        }
-    }
-    & #menu_lista{
-        display: none;
-        position: absolute;
-        top:100%;
+.header__menu a {
+    text-decoration: none;
+}
 
-        text-decoration: none;
-        color: var(--cor-secundaria);
-        border: 0.125rem solid var(--cor-apoio) ;
-        list-style-type: none;
-
-    }& #menu_lista li a{
-        color: var(--cor-secundaria);
-    }
+.header__menu i {
+    font-size: 1.5rem;
+    padding: 0.35rem;
+    color: var(--cor-apoio);
     
-    &#menu_lista a:hover{
-        color:var(--cor-apoio);
-    }
-    
-    & #menu_lista a:visited{
-        color:var(--cor-secundaria);
-    }
+}
 
+.header__menu i:hover {
+
+    color: var(--cor-primaria);
+    background-color: var(--cor-apoio);
+    border-radius: 3rem;
+}
+
+.header__menu h2 {
+    font-size: 1.8rem;
+    color: var(--cor-secundaria);
+}
+
+.header__menu h2:hover {
+    color: var(--cor-apoio-title);
+}
+
+#menu_lista {
+    display: none;
+    position: absolute;
+    top: 100%;
+
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border: 0.125rem solid var(--cor-apoio);
+    list-style-type: none;
+    background-color: var(--cor-primaria);
+
+}
+
+#menu_lista li a {
+    color: var(--cor-secundaria);
+}
+
+&#menu_lista a:hover {
+    color: var(--cor-apoio);
+}
+
+#menu_lista a:visited {
+    color: var(--cor-secundaria);
 }
