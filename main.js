@@ -49,6 +49,11 @@ for(let i=0; i<projetos.length; i++){
   const projeto_conhecimento_texto=document.createElement("div")
   projeto_conhecimento_texto.classList.add("projetos__conhecimento__texto")
 
+  const nome = document.createElement("h4");
+  nome.innerHTML=projetos[i].name;
+
+  projeto_conhecimento_texto.appendChild(nome);
+
   //Fazer com que crie sozinho os conhecimentos
    projetos[i].conhecimentos.forEach(conhecimento => {
       const icon = document.createElement("i");
