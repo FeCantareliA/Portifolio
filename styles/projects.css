@@ -44,7 +44,7 @@
 }
 .projetos__conhecimento__texto{
     white-space: nowrap; 
-  color: white;
+  color: var(--cor-secundaria);
   font-size: 20px;
   position: absolute;
   overflow: hidden;
