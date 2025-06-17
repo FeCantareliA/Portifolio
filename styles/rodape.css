@@ -83,3 +83,18 @@ a:visited {
 .icon-subtitle {
     color: var(--cor-quaternaria);
 }
+
+
+
+@media(max-width: 1200px){
+.rodape{
+    width: 100%;
+}
+.icons{
+    flex-wrap: wrap;
+    gap:0;
+}
+.icon-principal{
+    font-size:1rem;
+}
+}

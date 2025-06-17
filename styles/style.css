@@ -195,4 +195,21 @@ span {
 
 
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+ .foto{
+    width:50%;
+ }
+.title{
+    font-size: 2.2rem;
+}
+.paragrafo-introducao{
+    font-size: 1rem;;
+}
+.container__conhecimentos{
+    flex-wrap: wrap;
+}
+
+.container__formacao__lista__conteudo{
+    text-align: left;
+}
+}
