@@ -223,7 +223,9 @@ span {
     font-family: var(--fonte-primaria);
 }
 
-
+.listas{
+    flex-wrap: wrap;
+}
 .container__formacao__lista{
     font-size:1.2rem;
 }
