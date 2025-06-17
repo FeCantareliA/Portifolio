@@ -138,15 +138,17 @@ p {
     align-items: center;
 }
 .container__conhecimentos{
-    background-color: var(--cor-bg-itens);
-    padding: 5px;
-    border-top-left-radius: 15px;
-    border-bottom: 1px solid var(--cor-apoio);
+    display: grid;
+    grid-template-columns: 20% ;
 }
 
 .container__conhecimento__info {
     font-size: 2.2rem;
     color: var(--cor-secundaria);
+    background-color: var(--cor-bg-itens);
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-bottom: 1px solid var(--cor-apoio);
 }
 
 .container__conhecimento__info i:hover {
