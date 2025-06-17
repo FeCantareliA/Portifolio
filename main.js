@@ -90,11 +90,19 @@ function toggleDarkMode() {
 // Load light or dark mode
 function loadTheme() {
   const darkMode = localStorage.getItem("dark");
-
-  if (darkMode) {
-    toggleDarkMode();
+if (darkMode === "1") {
+    document.body.classList.add("dark");
     labelchange.innerHTML = moon;
-  }else {
+  } else if (darkMode === null) {
+    // Verifica preferência do sistema
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (prefersDark) {
+      document.body.classList.add("dark");
+      labelchange.innerHTML = moon;
+    } else {
+      labelchange.innerHTML = sun;
+    }
+  } else {
     labelchange.innerHTML = sun;
   }
 }
