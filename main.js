@@ -1,32 +1,39 @@
 import projetos from "./projects.js";
 
+const barsMenu = "<i class='fa-solid fa-bars'></i>";
+const closeMenu = "<i class='fa-solid fa-xmark'></i>";
+const buttonMenu = document.getElementById("btmenu");
+const listMenu = document.getElementById("menu_lista");
+
+const moon ="<i class='fa-solid fa-moon'></i>";
+const sun = "<i class='fa-solid fa-sun'></i>"
+
+const changeThemeBtn = document.querySelector("#change-theme");
+const labelchange = document.querySelector(".changed-theme")
+
 window.addEventListener('DOMContentLoaded', () => {
-  const buttonMenu = document.getElementById("btmenu");
-  const listMenu = document.getElementById("menu_lista");
-
-  const barsMenu = "<i class='fa-solid fa-bars'></i>";
-  const closeMenu = "<i class='fa-solid fa-xmark'></i>";
-
-  const inteMenu = () => {
-    if (listMenu.style.display === "none" || listMenu.style.display === "") {
-      listMenu.style.display = "block";
-      buttonMenu.innerHTML = closeMenu;
-    } else {
-      listMenu.style.display = "none";
-      buttonMenu.innerHTML = barsMenu;
-    }
-  };
-
-  function inicio() {
-    buttonMenu.innerHTML = barsMenu;
-  }
 
   inicio();
   buttonMenu.onclick = inteMenu;
+  
+  loadTheme();
 
-  criarProjetos(projetos);
+  
 });
+criarProjetos(projetos);
 
+function inicio() {
+  buttonMenu.innerHTML = barsMenu;
+}
+const inteMenu = () => {
+  if (listMenu.style.display === "none" || listMenu.style.display === "") {
+    listMenu.style.display = "block";
+    buttonMenu.innerHTML = closeMenu;
+  } else {
+    listMenu.style.display = "none";
+    buttonMenu.innerHTML = barsMenu;
+  }
+};
 
 
 function criarProjetos(projetos) {
@@ -75,3 +82,32 @@ function criarProjetos(projetos) {
   }
 }
 
+// Toggle dark mode
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+}
+
+// Load light or dark mode
+function loadTheme() {
+  const darkMode = localStorage.getItem("dark");
+
+  if (darkMode) {
+    toggleDarkMode();
+    labelchange.innerHTML = moon;
+  }else {
+    labelchange.innerHTML = sun;
+  }
+}
+changeThemeBtn.addEventListener("change", function () {
+  toggleDarkMode();
+
+  // Save or remove dark mode from localStorage
+  localStorage.removeItem("dark");
+
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("dark", 1);
+    labelchange.innerHTML = moon;
+  }else{
+    labelchange.innerHTML = sun;
+  }
+});

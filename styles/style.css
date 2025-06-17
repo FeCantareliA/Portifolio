@@ -5,13 +5,13 @@
 @import url('../styles/projects.css');
 
 :root {
-    --cor-primaria: #13131f;
-    --cor-secundaria: #F2F2F2;
-    --cor-quaternaria: #b8b5b5;
-    --cor-apoio: #22D4FD;
-    --cor-apoio-title: #80E8FF;
+    --cor-primaria: #F2F2F2;
+    --cor-secundaria: #13131f;
+    --cor-quaternaria: #383737;
+    --cor-apoio: #0584a0;
+    --cor-apoio-title: #03718a;
 
-    --cor-bg-itens: #1a1a24;
+    --cor-bg-itens: #03718a;
 
     --fonte-primaria: "Montserrat", sans-serif;
     --fonte-secundaria: "Krona-one", sans-serif;
@@ -25,6 +25,12 @@
     box-sizing: border-box;
 
     font-family: var(--fonte-primaria);
+}
+input[type="checkbox"]{
+    display: none;
+}
+.fa-solid_fa-moon{
+    display: none;
 }
 
 body {
@@ -172,6 +178,15 @@ span {
 }
 
 
+.dark, .dark header{
+    --cor-primaria: #13131f;
+    --cor-secundaria: #F2F2F2;
+    --cor-quaternaria: #b8b5b5;
+    --cor-apoio: #22D4FD;
+    --cor-apoio-title: #80E8FF;
+
+    --cor-bg-itens: #1a1a24;
+}
 
 
 
