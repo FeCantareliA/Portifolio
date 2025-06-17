@@ -24,7 +24,7 @@
     text-align: center;
     box-sizing: border-box;
     
-    
+    font-family: var(--fonte-primaria);
 }
 
 body {
@@ -63,15 +63,17 @@ hr{
 .title {
     font-size: 3.2rem;
     line-height: 4.2rem;
+
+    font-family: var(--fonte-primaria);
 }
 
 span {
     color: var(--cor-apoio);
     font-weight: 500;
-    font-family: var(--fonte-primaria);
+    font-family: var(--fonte-secundaria);
 }
 
-p {
+.paragrafo-introducao {
     font-size: 2rem;
     color: var(--cor-quaternaria);
 }
@@ -152,9 +154,14 @@ p {
     width:12rem;
     border-top-left-radius: 15px;
     border-bottom: 1px solid var(--cor-apoio);
+    font-family: var(--fonte-primaria);
+}
+.container__conhecimento__info__nome{
+    font-size: 1.5rem;
+    color:var(--cor-quaternaria);
 }
 
-.container__conhecimento__info i:hover {
+.container__conhecimento__info:hover {
     color: var(--cor-apoio);
     cursor:default;
 
