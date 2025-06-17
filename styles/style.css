@@ -139,14 +139,14 @@ p {
 }
 .container__conhecimentos{
     display: grid;
-    grid-template-columns: 20% ;
+    width: 100%;
 }
 
 .container__conhecimento__info {
     font-size: 2.2rem;
     color: var(--cor-secundaria);
     background-color: var(--cor-bg-itens);
-    padding: 5px;
+    width:40%;
     border-top-left-radius: 15px;
     border-bottom: 1px solid var(--cor-apoio);
 }
