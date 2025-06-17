@@ -53,6 +53,7 @@
     font-size: 1.4rem;
     text-decoration: none;
     border: 0.125rem solid transparent;
+    padding: 0.2rem;
     
 }
 
@@ -72,12 +73,18 @@ a:visited {
 }
 
 .icon-principal:hover {
-    
     display: flex;
     justify-content: center;
     flex-direction: column;
 
     border: 0.125rem solid var(--cor-apoio);
+    border-radius: 1rem;
+    color: var(--cor-apoio);
+}
+.icon-principal:visited{
+    color: var(--cor-secundaria);
+}
+.icon-principal:visited:hover{
     color: var(--cor-apoio);
 }
 
