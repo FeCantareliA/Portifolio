@@ -11,8 +11,8 @@
 
 .rodape {
     position: fixed;
-    height: 10%;
-    width: 100vw;
+    height: 11%;
+    width: 100%;
     z-index: 1000;
     bottom: 0;
     left: 0;
@@ -26,7 +26,7 @@
 }
 
 .icons {
-    width: 100%;
+    width: auto;
     
     display: flex;
     justify-content: center;
@@ -39,7 +39,7 @@
 
 
 .icon {
-    width: 100%;
+    width: auto;
     padding: 0;
     display: flex;
     justify-content: center;
