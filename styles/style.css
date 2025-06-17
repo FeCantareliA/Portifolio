@@ -90,7 +90,7 @@ span {
 .container__about__cont {
     padding: 50px 0;
     ;
-    width: 50%;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -196,11 +196,16 @@ span {
 
 
 @media (max-width: 1200px) {
+    .intro{
+        flex-wrap: wrap;
+    }
  .foto{
     width:50%;
+    order:1;
  }
 .title{
     font-size: 2.2rem;
+    order:2;
 }
 .paragrafo-introducao{
     font-size: 1rem;;
@@ -208,8 +213,25 @@ span {
 .container__conhecimentos{
     flex-wrap: wrap;
 }
+.container__conhecimento__info {
+    font-size: 1.6rem;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-bg-itens);
+    width: 10rem;
+    border-top-left-radius: 15px;
+    border-bottom: 1px solid var(--cor-apoio);
+    font-family: var(--fonte-primaria);
+}
 
+
+.container__formacao__lista{
+    font-size:1.2rem;
+}
 .container__formacao__lista__conteudo{
     text-align: left;
+}
+.listas{
+    padding:10px;
+    gap:30px;
 }
 }

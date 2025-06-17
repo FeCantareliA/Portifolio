@@ -62,4 +62,7 @@
     .projects{
         grid-template-columns: repeat(2, 1fr)
     }
+    .projetos{
+        height: 80%;
+    }
 }
