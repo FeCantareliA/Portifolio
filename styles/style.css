@@ -126,7 +126,7 @@ p {
 }
 
 .container__formacao__lista__conteudo {
-    padding-left: 15px;
+    
     color: var(--cor-quaternaria);
     list-style: none;
 }
@@ -138,15 +138,18 @@ p {
     align-items: center;
 }
 .container__conhecimentos{
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    gap: 15px;
 }
 
 .container__conhecimento__info {
     font-size: 2.2rem;
     color: var(--cor-secundaria);
     background-color: var(--cor-bg-itens);
-    width:40%;
+    width:12rem;
     border-top-left-radius: 15px;
     border-bottom: 1px solid var(--cor-apoio);
 }
