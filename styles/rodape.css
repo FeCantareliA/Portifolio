@@ -10,7 +10,7 @@
 }
 
 .rodape {
-    position: fixed;
+    position: sticky;
     height: 11%;
     width: 100%;
     z-index: 1000;
@@ -18,7 +18,7 @@
     left: 0;
     right: 0;
     background-color: var(--cor-primaria);
-    border-top:0.1rem solid var(--cor-apoio);
+    border-top: 0.1rem solid var(--cor-apoio);
 }
 
 .rodape__titulo {
@@ -27,14 +27,13 @@
 
 .icons {
     width: auto;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 15px;
-    
-    
+
+
 }
 
 
@@ -55,7 +54,7 @@
     border: 0.125rem solid transparent;
     padding: 0.2rem;
     display: flex;
-    
+
 }
 
 a:visited {
@@ -76,16 +75,18 @@ a:visited {
 .icon-principal:hover {
     display: flex;
     justify-content: center;
-    
+
 
     border: 0.125rem solid var(--cor-apoio);
     border-radius: 1rem;
     color: var(--cor-apoio);
 }
-.icon-principal:visited{
+
+.icon-principal:visited {
     color: var(--cor-secundaria);
 }
-.icon-principal:visited:hover{
+
+.icon-principal:visited:hover {
     color: var(--cor-apoio);
 }
 

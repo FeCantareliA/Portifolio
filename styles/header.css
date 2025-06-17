@@ -12,19 +12,20 @@
 header {
     /*Up, Right, Down, Left  */
     z-index: 1000;
-    position: fixed;
+    top:0;
+    position: sticky;
     display: block;
     width: 100%;
     background-color: var(--cor-primaria);
     border-bottom: 0.125rem solid var(--cor-apoio);
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
 
 }
 
 .header__container {
-    
-    
+
+
     font-size: 2rem;
 
     align-items: center;
@@ -43,7 +44,7 @@ header {
     font-size: 1.5rem;
     padding: 0.35rem;
     color: var(--cor-apoio);
-    
+
 }
 
 .header__menu i:hover {

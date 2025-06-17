@@ -8,55 +8,61 @@
     --fonte-primaria: "Montserrat", sans-serif;
     --fonte-secundaria: "Krona-one", sans-serif;
 }
+
 .projects {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* mais limpo */
+    grid-template-columns: repeat(3, 1fr);
+    /* mais limpo */
     gap: 0.3rem;
-    justify-items: center; /* centraliza os itens na célula */
+    justify-items: center;
+    /* centraliza os itens na célula */
 }
 
 .projetos {
     position: relative;
     width: 100%;
-    
-    height: 300px; 
+
+    height: 300px;
     border: 0.125rem solid var(--cor-apoio);
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .projetos__imagem {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     display: block;
 }
-.projetos__conhecimento{
+
+.projetos__conhecimento {
     position: absolute;
     bottom: 100%;
     left: 0;
     right: 0;
     background-color: var(--cor-apoio);
-    opacity:70% ;
+    opacity: 70%;
     overflow: hidden;
     width: auto;
     height: 0;
-    transition: .5s ease;   
+    transition: .5s ease;
 }
-.projetos:hover .projetos__conhecimento{
+
+.projetos:hover .projetos__conhecimento {
     bottom: 0;
-  height: 100%;
+    height: 100%;
 }
-.projetos__conhecimento__texto{
-    white-space: nowrap; 
-  color: var(--cor-primaria);
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  
+
+.projetos__conhecimento__texto {
+    white-space: nowrap;
+    color: var(--cor-primaria);
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
 
 }
