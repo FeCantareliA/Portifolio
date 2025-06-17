@@ -11,21 +11,25 @@
 .projects {
     width: 100%;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: repeat(3, 1fr); /* mais limpo */
     gap: 0.3rem;
-    justify-content: center;
+    justify-items: center; /* centraliza os itens na célula */
 }
 
-
-.projetos{
+.projetos {
     position: relative;
     width: 100%;
+    
+    height: 300px; 
     border: 0.125rem solid var(--cor-apoio);
+    overflow: hidden; 
 }
-.projetos__imagem{
-    display: block;
+
+.projetos__imagem {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
 }
 .projetos__conhecimento{
     position: absolute;
@@ -45,7 +49,7 @@
 }
 .projetos__conhecimento__texto{
     white-space: nowrap; 
-  color: var(--cor-secundaria);
+  color: var(--cor-primaria);
   font-size: 20px;
   position: absolute;
   overflow: hidden;
