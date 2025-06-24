@@ -1,9 +1,9 @@
 export default [
   {
     src: "../assets/projetos/Port.png",
-    name: "Portifólio",
+    name: "Portfólio",
     conhecimentos: ["fab fa-html5", "fab fa-css3"],
-    href: "https://github.com/FeCantareliA/Portifolio",
+    href: "https://github.com/FeCantareliA/Portfolio",
   },
   {
     src: "../assets/projetos/Supramercado.png",
